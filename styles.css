@@ -1,0 +1,272 @@
+/* styles.css */
+.youtube-ui {
+    display: flex;
+}
+
+.left-pane {
+    width: 15%;
+    background-color: #121212;
+    color: #111010;
+    padding: 20px;
+}
+
+.section-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: large;
+    color: #fbf8f8;
+}
+
+/* styles.css */
+/* ... (previous CSS styles) */
+
+button {
+    background: transparent;
+    color: #f7f3f3;
+    border: none;
+    padding: 10px 25px; /* Increase padding for larger buttons */
+    font-size: 16px; /* Increase the font size */
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: background 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #514f4f;
+}
+
+.bar-icon
+{
+    margin-left: 26px;
+}
+.youtube-logo{
+    margin-right: 20px;
+}
+
+/* ... (other styles) */
+.dummy-buttons {
+    display: flex;
+}
+
+/* .dummy-button {
+    background: transparent;
+    color: #fbf8f8;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px; 
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: background 0.2s ease-in-out;
+    
+}
+
+.dummy-button:hover {
+    background-color: #666;
+} */
+
+.hidden {
+    display: none;
+}
+
+.show-more-button::before {
+    
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.youtube-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Style your other elements here as needed */
+/* ... Previous CSS styles ... */
+
+.right-pane {
+    width: 85%;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ... Previous CSS styles ... */
+
+.centered-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #3a3939;
+    border-radius: 20px;
+    padding: 9px;
+    min-width: 500px; /* Set a minimum width for the search bar */
+    margin-right: 70px; /* Add margin to move it slightly to the left */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: rgb(10, 10, 10);
+    color: #f7f3f3;
+    
+}
+
+.search-icon {
+    margin-left: auto;
+}
+
+.mic-icon {
+    margin-left: -60px;
+    cursor: pointer;
+    color: #faf7f7;
+}
+
+/* ... Rest of the CSS styles ... */
+
+
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    margin-top: -38px;
+}
+
+.right-icons i {
+    margin: 0 10px;
+    color: #f7ecec;
+    cursor: pointer;
+}
+
+.top-section1{
+    height: 4%;
+}
+ .horizontal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+   
+} 
+
+/* .button1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #656060;
+} */
+.horizontal-buttons .button1 {
+    margin-right: 10px; /* Add space between the buttons */
+    background-color: #222121;
+    border-radius: 15px;
+    height: 35px;
+    text-align: center;
+}
+.button1:hover{
+    background-color: #3a3939 ;
+}
+/* ... Previous CSS styles ... */
+
+/* ... Previous CSS styles ... */
+
+.image-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+.image-box {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #070707;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ... Rest of the CSS styles ... */
+
+
+/* ... Rest of the CSS styles ... */
+/* ... Previous CSS styles ... */
+
+/* Media query for screens smaller than 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    .right-pane {
+        width: 100%; /* Make the right pane full width */
+    }
+
+    .top-section {
+        flex-direction: column; /* Stack the top-section elements vertically */
+    }
+
+    .centered-icons {
+        flex-direction: row; /* Keep the bar icon and YouTube logo side by side */
+    }
+
+    .centered-search-bar {
+        margin: 0; /* Reset the margin to center the search bar */
+        text-align: center; /* Center the search bar text */
+    }
+
+    .search-bar {
+        width: 30%; /* Make the search bar full width */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .search-bar input {
+        width: 50%; /* Make the input full width */
+    }
+
+    .right-icons {
+        flex-direction: row; /* Keep the icons in a row */
+        justify-content: flex-end; /* Right-align the icons */
+    }
+
+    .horizontal-buttons {
+        flex-direction: row; /* Stack the buttons vertically */
+    }
+
+    .image-boxes {
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    .row {
+        flex-direction: column; /* Stack the image boxes in a column */
+    }
+
+    .image-box {
+        margin: 10px 0; /* Add margin for spacing between image boxes */
+    }
+
+    .mic-icon {
+        margin: 10px 0; /* Add margin for spacing around the mic icon */
+    }
+}
+
+/* ... Rest of the CSS styles ... */
+
+
